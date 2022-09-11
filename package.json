@@ -1,0 +1,18 @@
+{
+  "name": "deploy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "push:dev": "cross-env NODE_ENV=dev PROJECT_NAME=400 node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "archiver": "^5.3.1",
+    "cross-env": "^7.0.3",
+    "ssh2": "^1.11.0"
+  }
+}
