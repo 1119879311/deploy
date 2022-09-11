@@ -137,7 +137,7 @@ module.exports = class deploy {
         `exit\n`
       ]
       
-      await this.shell(shShow.join(" "), true);
+      await shell(shShow.join(" "), true);
 
       const value = await readl("请输入要还原的备份文件(不需要加后缀.tar.gz)：")
       const zipbackFilePath = path.join(backdir, value + '.tar.gz').replace(/\\/g, '/');
